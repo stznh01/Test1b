@@ -13,13 +13,20 @@
 @end
 
 @implementation Deck
+- (id) init {
+    self = [super init];
+    if (self) {
+        [self cards];
+    }
+    return self;
+}
 - (NSMutableArray *)cards {
     if (!_cards) {
-        [[NSMutableArray alloc] init];
+        _cards = [[NSMutableArray alloc] init];
     }
     return _cards;
 }
-- (void) addCard: (Card *)aCard atTop: (BOOL *)atTop {
+- (void) addCard: (Card *)aCard atTop: (BOOL)atTop {
     if (atTop) {
         [_cards insertObject: aCard atIndex:0];
     } else {

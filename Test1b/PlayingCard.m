@@ -35,23 +35,43 @@
 }
  */
 
-+ (NSArray *)rankStrings {
++ (NSArray *) rankStrings {
     return @[@"?",@"A",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"J",@"Q",@"K"];
 }
 
 - (NSString *) contents {
     NSArray *thisRank = [PlayingCard rankStrings];
-    return [NSString stringWithFormat:@"%@, %@", [thisRank objectAtIndex:*(_rank)], _suit];
+    //return [NSString stringWithFormat:@"%@, %@", [thisRank objectAtIndex:*(_rank)], _suit];
+    NSArray *cardContents = thisRank;
+    return [[cardContents objectAtIndex:[self rank]] stringByAppendingString:self.suit];
 }
 
-+ (NSUInteger *) maxRank {
++ (NSUInteger) maxRank {
     return [[self rankStrings] count] - 1;
     // Why max is not itself but a lower rank?
 }
 
-- (void)setRank:(NSUInteger *)rank {
+- (void) setRank:(NSUInteger) rank {
     if (rank <= [PlayingCard maxRank]) {
         _rank = rank;
     }
 }
+// A new implementation of match from Prof.Toth
+- (int) match:(NSArray *)cardList {
+    int score = 0;
+    if ([cardList count] == 1) {
+        PlayingCard *compCard = [cardList firstObject];
+        if ([_suit isEqualToString:compCard.suit]) {
+            score = 1;
+        } else if (_rank == compCard.rank) {
+            score = 4;
+        }
+    }
+    return score;
+}
 @end
+
+
+
+
+

@@ -15,12 +15,20 @@
 		C01677E918C11AE900C2E191 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C01677E818C11AE900C2E191 /* AppDelegate.m */; };
 		C01677EC18C11AE900C2E191 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01677EA18C11AE900C2E191 /* Main.storyboard */; };
 		C01677EF18C11AE900C2E191 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C01677EE18C11AE900C2E191 /* ViewController.m */; };
-		C01677F118C11AE900C2E191 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01677F018C11AE900C2E191 /* Images.xcassets */; };
 		C01677F818C11AE900C2E191 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01677F718C11AE900C2E191 /* XCTest.framework */; };
 		C01677F918C11AE900C2E191 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01677D818C11AE900C2E191 /* Foundation.framework */; };
 		C01677FA18C11AE900C2E191 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01677DC18C11AE900C2E191 /* UIKit.framework */; };
 		C016780218C11AE900C2E191 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C016780018C11AE900C2E191 /* InfoPlist.strings */; };
 		C016780418C11AE900C2E191 /* Test1bTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C016780318C11AE900C2E191 /* Test1bTests.m */; };
+		C016781818C11D0200C2E191 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = C016781118C11D0200C2E191 /* Card.m */; };
+		C016781918C11D0200C2E191 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = C016781318C11D0200C2E191 /* Deck.m */; };
+		C016781A18C11D0200C2E191 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = C016781518C11D0200C2E191 /* PlayingCard.m */; };
+		C016781B18C11D0200C2E191 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = C016781718C11D0200C2E191 /* PlayingCardDeck.m */; };
+		C016781D18C135A000C2E191 /* morback.png in Resources */ = {isa = PBXBuildFile; fileRef = C016781C18C1359F00C2E191 /* morback.png */; };
+		C016781F18C13C5A00C2E191 /* backGround.png in Resources */ = {isa = PBXBuildFile; fileRef = C016781E18C13C5A00C2E191 /* backGround.png */; };
+		C016782218C13CA200C2E191 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = C016782118C13CA200C2E191 /* CardMatchingGame.m */; };
+		C0996E0318EC98C900DB1EF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0996E0218EC98C900DB1EF8 /* Images.xcassets */; };
+		C0CBD6C818FF10F7007300CB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CBD6C718FF10F7007300CB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,12 +55,25 @@
 		C01677EB18C11AE900C2E191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C01677ED18C11AE900C2E191 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C01677EE18C11AE900C2E191 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C01677F018C11AE900C2E191 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C01677F618C11AE900C2E191 /* Test1bTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test1bTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C01677F718C11AE900C2E191 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C01677FF18C11AE900C2E191 /* Test1bTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test1bTests-Info.plist"; sourceTree = "<group>"; };
 		C016780118C11AE900C2E191 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C016780318C11AE900C2E191 /* Test1bTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test1bTests.m; sourceTree = "<group>"; };
+		C016781018C11D0200C2E191 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		C016781118C11D0200C2E191 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		C016781218C11D0200C2E191 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		C016781318C11D0200C2E191 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		C016781418C11D0200C2E191 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		C016781518C11D0200C2E191 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		C016781618C11D0200C2E191 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		C016781718C11D0200C2E191 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
+		C016781C18C1359F00C2E191 /* morback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = morback.png; sourceTree = "<group>"; };
+		C016781E18C13C5A00C2E191 /* backGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backGround.png; sourceTree = "<group>"; };
+		C016782018C13CA200C2E191 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
+		C016782118C13CA200C2E191 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
+		C0996E0218EC98C900DB1EF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C0CBD6C718FF10F7007300CB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CBD6C818FF10F7007300CB /* QuartzCore.framework in Frameworks */,
 				C01677DB18C11AE900C2E191 /* CoreGraphics.framework in Frameworks */,
 				C01677DD18C11AE900C2E191 /* UIKit.framework in Frameworks */,
 				C01677D918C11AE900C2E191 /* Foundation.framework in Frameworks */,
@@ -101,6 +123,7 @@
 		C01677D718C11AE900C2E191 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0CBD6C718FF10F7007300CB /* QuartzCore.framework */,
 				C01677D818C11AE900C2E191 /* Foundation.framework */,
 				C01677DA18C11AE900C2E191 /* CoreGraphics.framework */,
 				C01677DC18C11AE900C2E191 /* UIKit.framework */,
@@ -115,9 +138,21 @@
 				C01677E718C11AE900C2E191 /* AppDelegate.h */,
 				C01677E818C11AE900C2E191 /* AppDelegate.m */,
 				C01677EA18C11AE900C2E191 /* Main.storyboard */,
+				C016781E18C13C5A00C2E191 /* backGround.png */,
+				C016782018C13CA200C2E191 /* CardMatchingGame.h */,
+				C016782118C13CA200C2E191 /* CardMatchingGame.m */,
+				C016781C18C1359F00C2E191 /* morback.png */,
+				C016781018C11D0200C2E191 /* Card.h */,
+				C016781118C11D0200C2E191 /* Card.m */,
+				C016781218C11D0200C2E191 /* Deck.h */,
+				C016781318C11D0200C2E191 /* Deck.m */,
+				C016781418C11D0200C2E191 /* PlayingCard.h */,
+				C016781518C11D0200C2E191 /* PlayingCard.m */,
+				C016781618C11D0200C2E191 /* PlayingCardDeck.h */,
+				C016781718C11D0200C2E191 /* PlayingCardDeck.m */,
 				C01677ED18C11AE900C2E191 /* ViewController.h */,
 				C01677EE18C11AE900C2E191 /* ViewController.m */,
-				C01677F018C11AE900C2E191 /* Images.xcassets */,
+				C0996E0218EC98C900DB1EF8 /* Images.xcassets */,
 				C01677DF18C11AE900C2E191 /* Supporting Files */,
 			);
 			path = Test1b;
@@ -196,7 +231,7 @@
 		C01677CD18C11AE900C2E191 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Zixuan Huang";
 				TargetAttributes = {
 					C01677F518C11AE900C2E191 = {
@@ -228,8 +263,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C01677F118C11AE900C2E191 /* Images.xcassets in Resources */,
+				C016781D18C135A000C2E191 /* morback.png in Resources */,
+				C0996E0318EC98C900DB1EF8 /* Images.xcassets in Resources */,
 				C01677E318C11AE900C2E191 /* InfoPlist.strings in Resources */,
+				C016781F18C13C5A00C2E191 /* backGround.png in Resources */,
 				C01677EC18C11AE900C2E191 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,9 +286,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C016781A18C11D0200C2E191 /* PlayingCard.m in Sources */,
+				C016781918C11D0200C2E191 /* Deck.m in Sources */,
 				C01677EF18C11AE900C2E191 /* ViewController.m in Sources */,
 				C01677E918C11AE900C2E191 /* AppDelegate.m in Sources */,
+				C016782218C13CA200C2E191 /* CardMatchingGame.m in Sources */,
+				C016781B18C11D0200C2E191 /* PlayingCardDeck.m in Sources */,
 				C01677E518C11AE900C2E191 /* main.m in Sources */,
+				C016781818C11D0200C2E191 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +347,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -334,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -344,7 +385,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -367,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -402,7 +442,6 @@
 		C016780B18C11AE900C2E191 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Test1b.app/Test1b";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -425,7 +464,6 @@
 		C016780C18C11AE900C2E191 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Test1b.app/Test1b";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -460,6 +498,7 @@
 				C016780918C11AE900C2E191 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C016780A18C11AE900C2E191 /* Build configuration list for PBXNativeTarget "Test1bTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +507,7 @@
 				C016780C18C11AE900C2E191 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

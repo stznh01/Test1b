@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PlayingCardDeck.h"
+#import "PlayingCard.h"
 
 @interface CardMatchingGame : NSObject
+@property (nonatomic, readonly) NSInteger score;
 
+- (instancetype) initWithCardCount: (NSUInteger)count usingDeck:(PlayingCardDeck *)deck;
+- (void) chooseCardAtIndex: (NSUInteger)index;
+- (PlayingCard *) pickOneCard: (NSUInteger)index;
 @end

@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CardMatchingGame.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    CardMatchingGame *game;
+}
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cards;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+- (IBAction)restart:(id)sender;
+- (IBAction)chooseCard:(UIButton *)sender;
 
 @end
